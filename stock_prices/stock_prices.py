@@ -8,10 +8,23 @@ def find_max_profit(prices):
   # create a variable to track our current profit
   current_profit = 0
   # loop through the prices
-  # add each iteration to current_profit
-  # if we go negative we will reset current_profit to 0
+  # our current_profit will equal the price at iteration - the first item in the list
   # if current_profit is greater than our max_profit, our max_profit is now our current_profit
+  # if our current_profit is less than our max_profit, our current_profit is now a loss
+  # if there is no max profit we will return the loss
   # return max_profit
+  while len(prices) > 0:
+    for x in range(len(prices)):
+      current_profit = prices[x] - prices[0]
+      if current_profit > max_profit:
+        max_profit = current_profit
+      if current_profit < max_profit:
+        loss = current_profit
+    del prices[0]
+  if max_profit == 0:
+    return loss
+  return max_profit
+
 
   
 
