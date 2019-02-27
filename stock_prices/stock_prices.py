@@ -3,7 +3,16 @@
 import argparse
 
 def find_max_profit(prices):
-  pass
+  # create a variable to track our max profit
+  max_profit = 0
+  # create a variable to track our current profit
+  current_profit = 0
+  # loop through the prices
+  # add each iteration to current_profit
+  # if we go negative we will reset current_profit to 0
+  # if current_profit is greater than our max_profit, our max_profit is now our current_profit
+  # return max_profit
+
   
 
 
