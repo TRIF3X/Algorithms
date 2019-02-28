@@ -3,6 +3,9 @@
 import math
 
 def recipe_batches(recipe, ingredients):
+  # compare the keys in ingredients to the keys in recipe
+  # if a key is missing print 0
+  # if all keys are present check how many times the ingredients can be divided into the recipe
   pass
        
 
