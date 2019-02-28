@@ -5,12 +5,17 @@ import sys
 plays = ['rock', 'paper', 'scissors']
 
 def rock_paper_scissors(n):
-  pass
+  # define return list
+  if n == 0:
+    return [[]]
+  if n == 1:
+    return [[play] for play in plays]
+  else:
+    return ([[play*n] for play in plays])
       
 
-  
 
-print(rock_paper_scissors(4))
+print(rock_paper_scissors(0))
 
 if __name__ == "__main__":
   if len(sys.argv) > 1:
